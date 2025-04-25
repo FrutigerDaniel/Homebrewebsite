@@ -1,0 +1,87 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tabs Navigation */
+.tabs ul {
+    display: flex;  /* Makes the tabs align horizontally */
+    justify-content: flex-start; /* Aligns items to the left */
+    list-style: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    white-space: nowrap;
+}
+
+/* Individual Tab Styling */
+.tabs li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /* Default: No border */
+    transition: border-color 0.3s ease;
+}
+
+/* Links inside tabs */
+.tabs a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Active Tab Effect */
+.tabs a:hover,
+.tabs .active a {
+    border-bottom: 2px solid black;
+}
+
+/* Game List */
+.game-list {
+    margin-top: 20px;
+}
+
+/* Game Item Box */
+.game-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Game Title */
+.game-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Game Description */
+.game-description {
+    font-size: 1rem;
+    color: #555;
+}
+/* Console Image */
+.console-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.console-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
